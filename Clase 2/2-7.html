@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu li{
+            /*
+                Ubica un elemento al lado del otro
+            */
+            display: inline-block;
+            background-color: darkslateblue; 
+            width: 100px;        
+            text-align: center;             
+        }
+        #menu li:hover{
+            background-color:lightseagreen;
+        }        
+        #menu li a{
+            color: white;
+            text-decoration: none;   
+            /*
+                En este contexto hace que el a ocupe todo el lugar del botón o elemento del menu
+            */
+            display: block;      
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Acerca De</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>    
+</body>
+</html>
