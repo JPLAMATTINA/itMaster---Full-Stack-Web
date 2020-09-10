@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDBja.</title>
+    <style>
+body {
+    margin:5%;
+}
+
+#container {
+    width:800px;
+    margin: 0 auto;
+}
+
+
+
+#header {
+    text-align: center;
+    background-color: yellowgreen;
+    
+}
+
+.sideBox {
+    width:25%;
+    height: 100px;
+    float: left;
+    background-color: blue;
+    box-sizing: border-box;
+} 
+
+.centerBox {
+    width:50%;
+    height: 100px;
+    float: left;
+    background-color: red;
+    box-sizing: border-box;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+#menu li{
+    /*
+        Ubica un elemento al lado del otro
+    */
+    display: inline-block;
+    background-color: green; 
+    width: 145px;        
+    text-align: center;    
+         
+}
+#menu li:hover{
+    background-color:lightseagreen;
+}        
+#menu li a{
+    color: white;
+    text-decoration: none;   
+    /*
+        En este contexto hace que el a ocupe todo el lugar del botón o elemento del menu
+    */
+    display: block;      
+}
+#menu{
+padding:0;margin:0;}
+img {
+    border-radius: 8px;
+    padding: 5px;
+    width: 30%;
+    
+}        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Header</h1>
+        </div>
+        <div class="sideBox"></div>
+        <div class="centerBox"></div>
+        <div class="sideBox"></div>
+        <div id="tags">
+            <ul id="menu">
+                <li><a href="https://www.imdb.com/whats-on-tv/?ref_=nv_tv_ontv" target="_blank">Series</a></li>
+                <li><a href="https://www.imdb.com/feature/genre/?ref_=nv_ch_gr" target="_blank">Peliculas</a></li>
+                <li><a href="https://www.imdb.com/search/name/?gender=male%2Cfemale&ref_=nv_cel_m" target="_blank">Actores</a></li>
+                <li><a href="https://www.imdb.com/search/name/?gender=male%2Cfemale&ref_=nv_cel_m" target="_blank">Actrices</a></li>
+                <li><a href="#">Directores</a></li>
+            </ul>
+        </div>
+        <div id="imag">
+            <img src="./img/fargo.jpg" >
+        </div>
+
+    </div>
+</body>
+</html>
