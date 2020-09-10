@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        #contenedor{
+            width:800px;
+            margin: 0 auto;
+        }        
+        #contenedor div{
+            float: left;
+        }        
+        .c1{
+            width:100%;
+            height: 100px;
+            background-color: orangered;            
+        }       
+       .c2{
+            width:25%;
+            height: 300px;
+            background-color: green;
+        }            
+        #cajacentro{
+            width:50%;
+            height: 300px;
+            background-color:blue;
+            color: white;
+            text-align: center;
+            padding:20px;
+            /* 
+                Hace que el Padding no haga crecer a la caja
+            */
+            box-sizing: border-box;
+        }          
+
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div id="cajacentro">
+            <h1>Soy el título central</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, natus quas? Itaque, ab dolorem. Nobis odio aliquid excepturi, deleniti dolores blanditiis distinctio illum, hic eum sapiente, fuga voluptates delectus neque!</p>
+        </div>      
+        <div class="c2"></div>          
+        <div class="c1"></div>
+        
+    </div>
+</body>
+</html>
