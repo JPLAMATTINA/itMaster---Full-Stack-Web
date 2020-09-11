@@ -1,0 +1,88 @@
+#page {
+    width: 960px;
+    height: 850px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px black solid;
+    background-color: rgb(76, 76, 235);
+}
+
+#heading {
+    width: 100%;
+    text-align: center;
+}
+
+#heading h1 {
+    font-family: monospace;
+    font-size: 40px;
+    color: white;
+}
+
+#heading em {
+    color: orange
+}
+
+#tagsmenu {
+    width: 100%;
+    border: solid black 1px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+#menu {
+    width: 100%;
+    padding:0;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 20px;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#menu li:hover {
+    background-color: blue;
+}
+
+#subheading {
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    margin: 5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#subheading h2 {
+    font-family: monospace;
+    font-size: 27px;
+    margin: 15px;
+    float: left;
+    text-align: center;
+}
+
+#subheading img {
+    margin-left: 20px;
+    float: right;
+}
+
+#img {
+    text-align: center;
+}
+
+#text p {
+    font-style: italic;
+    font-family: monospace;
+    margin: 5px;
+    margin-top: 10px;
+    color: white
+}
