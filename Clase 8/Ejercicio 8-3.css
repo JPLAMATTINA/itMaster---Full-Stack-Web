@@ -1,0 +1,105 @@
+#container{
+    width: 500px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+}
+
+#fitstBox{
+    width: 100%;
+    display: flex;
+}
+
+label{
+ 
+    margin: 10px auto;
+}
+#name{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    text-align:center;
+    /* estoy usando float y flex, no deberia ser solo flex? , no consigo subirlo */
+    float: left; 
+    box-sizing: border-box;
+}
+
+input[type="text"]{
+    width: 90%;
+    margin: 10px auto;
+}
+
+#lastName{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#emailBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    text-align:center;
+}
+
+input[type="email"]{
+    width: 95%;
+    margin-left: 2%;
+}
+
+#coments{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    text-align:center;
+    margin-left: 2%;
+    }
+
+textarea{
+    resize: none;
+    width: 475px;
+    height: 15px;
+    transition:1s;
+}
+textarea:focus{
+    height: 120px;
+}
+
+#lastBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    box-sizing: border-box;    
+}
+
+#age{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    text-align:center;   
+    margin-right: 17px; 
+}
+
+#known{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    text-align:center;
+   
+}
+
+input[type="submit"]{
+    text-align: center;
+    margin: 100px 42%;
+    margin-top: 10px;
+    margin-bottom: 10px;;
+}
+

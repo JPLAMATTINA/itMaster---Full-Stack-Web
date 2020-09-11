@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ejercicio 8-2.css">
+</head>
+
+<body>
+    <form>
+        <div id="container">
+            <h1>Formulario de pedido</h1>
+            <div class="boxes" id="firstBox">
+                <label><strong>Usuario</strong></label>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="boxes" id="secondBox">
+                <div id="clothes">
+                    <div class="buttonCheck">
+                        <input type="checkbox"><span>Pantalón</span>
+                    </div>
+                    <div class="buttonCheck">
+                        <input type="checkbox"><span>Remera</span>
+                    </div>
+                    <div class="buttonCheck">
+                        <input type="checkbox"><span>Campera</span>
+                    </div>
+                </div>
+                <!-- value minimo puede ser 0 -->
+                <div id="counter">
+                    <input type="number" value="0" min="0" max="10">
+                    <input type="number" value="0" min="0" max="10">
+                    <input type="number" value="0" min="0" max="10">
+                </div>
+            </div>
+            <div class="boxes" id="thirdBox">
+                <div id="index">
+                    <div id="code">
+                        <label for="c">N° de Código</label>
+                        <input type="text" placeholder="Ingrese código">
+                    </div>
+                </div>
+                <div id="date">
+                    <label for="d">Fecha de Entrega</label>
+                    <input type="datetime-local" value="" min="2020-08-27T12:00" max="2020-09-27T23:30" >
+                    <div id="boxDate">📆</div>
+                </div>
+                <div id="buttons">
+                    <input name="a" type="submit" value="Consultar">
+                    <input name="b" type="submit" value="Comprar">
+                </div>
+            </div>
+    </form>
+
+</body>
+
+</html>

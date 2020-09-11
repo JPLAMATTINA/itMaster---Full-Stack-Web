@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        #contenedor{
+            width: 100%;
+            max-width: 1240px;
+            min-width: 320px;
+            margin: 0 auto;
+        }
+        header,nav{
+            width: 100%;
+            float: left;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color: gold;    
+            padding:10px;
+            box-sizing: border-box;        
+        }
+        nav{
+            background-color: coral;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;   
+            align-items: center;  
+            margin:0 10%;
+            padding:0;       
+        }
+        nav ul li{
+            cursor:pointer;
+        }
+        .seleccionado{
+            background-color: crimson;
+            color: white;
+            height: 50px;
+            width:100px;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: center;              
+        }
+        main{
+            width: 75%;
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        main h2{
+            text-align: center;
+            width: 100%;
+        }
+        figure{
+            width:40%;
+        }
+        figure img{
+            width: 100%;
+        }
+        #descripcion{
+            text-align: center;
+            width: 40%;
+        }
+
+        aside{
+            width: 25%;
+            float: left;
+            height: 400px;
+            background-color: lightyellow;
+            display: flex;
+            align-items: center;            
+            justify-content: center;
+        }        
+
+        #stars{
+            display: flex;            
+            list-style: none;
+            margin: 10px 0;
+            padding:0;
+            justify-content: center;
+        }
+        .btn{
+            border-radius: 10px;            
+            background-color: lightskyblue;
+            padding:10px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            box-shadow: 1px 1px 10px white inset,1px 1px 2px black;
+        }
+
+        @media all and (max-width: 600px) {
+            header h1{
+                font-size:24px;
+                margin: 12px 0;
+            }
+            nav ul{
+                margin: 0;
+            }
+            header img{
+                width:200px;
+            }
+            main figure, #descripcion{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>Soy el título</h1>
+            <div>
+                <img src="https://via.placeholder.com/350x70" alt="">
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li class="seleccionado">Menu 3</li>
+                <li>Menu 4</li>
+                <li>Menu 5</li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Soy el título del artículo</h2>
+            <figure>
+                <img src="https://via.placeholder.com/250x250/09f/fff" alt="">
+                <figcaption>Descripción del artículo</figcaption>
+            </figure>
+            <div id="descripcion">
+                <p>Precio: <strong>$1.000</strong></p>
+                <span class="btn">Comprar</span>
+                <ul id="stars">
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                    <li>⭐</li>
+                </ul>
+            </div>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti dolor error illo eum excepturi perferendis. Minima, obcaecati ipsum? Tenetur nam excepturi atque quisquam harum eos voluptates eum temporibus repellendus!</p>
+            </section>
+        </main>
+        <aside>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>            
+        </aside>
+    </div>
+</body>
+</html>

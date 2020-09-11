@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contenedor{
+            width:50%;
+            margin:0 auto;
+
+        }
+        h1{
+            text-align: center;
+        }
+        #contenedor section{
+            column-count: 3;
+            column-gap: 50px;
+            column-rule: 1px solid silver;
+        }
+        #contenedor p:first-child{
+            margin-top: 0;
+        }
+
+        #contenedor p:last-child{
+            padding-bottom:20px;
+            border-bottom:1px solid lightslategray;
+        }
+        @media screen and (max-width:840px){
+            #contenedor{
+                width:80%;
+            }
+            #contenedor section{column-count: 2;}
+        }
+        @media screen and (max-width:540px){
+            #contenedor{
+                width:90%;
+            }
+            #contenedor section{column-count: 1;}
+        }        
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Soy el título del Mundo</h1>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptates illo modi enim dolor. Nisi illo culpa, libero aliquam accusamus doloribus quas facilis neque aut at odio aperiam excepturi dolorum voluptatem esse consequatur similique. Cumque quidem officia nostrum nesciunt sunt dolore optio iste corporis aliquam modi rerum at quo doloribus totam quaerat exercitationem ad soluta commodi odit, sapiente sint porro quibusdam consequuntur facilis. Ex, ab ea. Dolore a, iste consequuntur expedita aspernatur dolores corporis accusantium corrupti doloremque officiis, ipsam porro facilis. Quibusdam labore non quam alias ducimus autem quas nam enim aliquam voluptatibus totam nihil, corporis quidem praesentium debitis magnam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus praesentium recusandae nemo quas beatae similique iure, culpa, blanditiis expedita fuga eum voluptatem nostrum suscipit rerum consequuntur, sit incidunt odio ab libero dignissimos totam qui. Ipsam modi, atque eaque exercitationem laboriosam est nostrum quam magni nisi, quibusdam cupiditate totam voluptatem nesciunt!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex aspernatur eum hic excepturi alias earum maxime itaque libero dolores, a corrupti porro maiores praesentium dicta atque ullam ad doloremque incidunt quas at deleniti laborum perspiciatis saepe tenetur? Aspernatur exercitationem quasi voluptatum voluptates labore, consequuntur delectus accusamus praesentium laboriosam, fuga perferendis deserunt eius, natus suscipit repellat ipsam. Voluptatibus, quod saepe velit sed ea possimus nostrum excepturi impedit vel ullam minima sapiente harum facilis natus consequuntur optio iste. Nihil ut iste dolorem qui corporis hic totam inventore voluptates sint. Accusantium culpa perferendis atque deserunt incidunt tempore fugit pariatur provident corporis! Laborum id veritatis labore officia, consequuntur omnis dolorem iste possimus facere eum quam eveniet totam perferendis eligendi. Esse cumque et dolorem explicabo dolore id ratione nostrum atque quis maiores voluptatum laudantium labore ex, veritatis distinctio minima animi placeat, error beatae odit sunt enim fugiat quia! Quas corporis accusamus dolore recusandae earum odit.</p>
+        </section>
+    </div>
+</body>
+</html>

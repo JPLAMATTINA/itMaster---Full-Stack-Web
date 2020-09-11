@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    
+}
+#contain{
+    margin:0 auto;
+    width: 100%;
+    background: lightyellow;
+
+}
+header{
+    width: 95%;
+    margin: 2%;
+    border:1px solid black;
+    box-sizing: border-box;
+    float: left;
+}
+header h1{
+    float: left;
+    width: 70%;
+    margin-left: 3%;
+    font-size: 50px;
+
+}
+header img{
+    float: right;
+    margin: 1%;
+}
+
+#mainleft{
+    float: left;
+    width: 59%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+#mainrigth{
+    float: right;
+    width: 36%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+main h2{
+    width: 100%;
+    font-size: 35px;
+    
+}
+#mainleft p{
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 1px solid silver;
+    float: left;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+main h3{
+    float: left;
+    width: 100%;
+    font-size: 25px;
+}
+#calendar{
+    float: left;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border:2px solid black;
+    border-radius: 8px;
+    margin-top: 9%;
+    box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.75);
+  
+}
+#calendar table{
+    width: 60%;
+    margin: 1% 4%;
+}
+#date{
+    width: 100%;
+    background-color: gray;
+}
+#date h4{
+    
+    font-size: 20px;
+}
+.calificar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.calificar p{
+    width: 100%;
+    font-size: 20px;
+    
+}
+#publicidad{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+#publicidad img{
+    width: 90%;
+    margin-top: 2%;
+    padding: 0;
+
+}
+
+footer{
+   width: 100%;
+   display: flex;
+   justify-content: center;     
+}   
+#footerbox{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 25% 40% 25%;
+    grid-template-areas: "b1 b2 b3";
+    float: left;
+    margin: 2% 5%;
+    justify-content: space-between;
+
+}
+.box{
+    border:1px solid black;
+    min-height: 80px;
+}
+
+#box1{
+    grid-area: b1;   
+}
+#box2{
+    grid-area: b2;    
+}
+#box3{
+    grid-area: b3;   
+}
+
+@media(max-width:720px){
+    #calendar{
+        display:none;
+    }
+    main h3{
+        display: none;
+    }
+    
+    #mainleft{
+        
+        
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width:655px){
+    header h1{
+        
+        width: 40%;
+        
+        font-size: 30px;
+    
+    }
+}

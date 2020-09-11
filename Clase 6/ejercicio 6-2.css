@@ -1,0 +1,122 @@
+body{
+    background-color: grey;
+}
+
+#container{
+    width: 100%;
+    min-width: 360px;
+    max-width: 1440px;
+}
+
+header {
+    /* no me toma todo el ancho, el lado izq al 100% no queda completo */
+
+    width: 98%;
+    min-height: 75px;
+    background-color: greenyellow;
+    border: 1px black solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    }
+
+#title{
+        width: 50%;
+        font-size: 3em;
+        margin: 28px auto;
+        margin-left: 10px;
+}
+
+#imgHeader {
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
+    margin-right: 120px;
+    padding: 0px;
+}
+
+main{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#subTitle{
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#imgMain{
+    width: 100%;
+    min-height: 200px;
+}
+section{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: 45% 45%;
+    grid-template-areas:
+    "txtLeft  txtRight"
+    
+
+}
+
+#textColumns {
+    width: 100%;
+    display: grid;
+    margin: 10px;
+    margin-left: 1%;
+    text-align: center;
+}
+
+#txtLeft{
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#txtRight{
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer{
+    width: 90%;
+    min-height: 75px;
+    margin: 0px auto;
+    margin-top: 500px;
+    margin-left: 4%;
+    margin-bottom: 20px;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: space-between;
+    border: 1px black solid;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0px;
+}
+
+#txtFooter{
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 0px;
+}
+#button{
+    font-size: 30px;
+    margin: 1%;
+}

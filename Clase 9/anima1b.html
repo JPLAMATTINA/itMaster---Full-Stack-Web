@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #caja{
+            background-color: red;
+            width:200px;
+            height: 200px;   
+            animation: mianimacion 5s infinite;         
+        }
+        
+        @keyframes mianimacion {
+            0% {
+                background-color: blue;
+                border-radius: 0;
+            }
+
+            50% {
+                background-color: red;
+                border-radius: 50%;
+            }
+            100% {
+                background-color: blue;
+                border-radius: 0;
+            }
+        }        
+
+    </style>
+</head>
+<body>
+    <div id="caja"></div>
+</body>
+</html>

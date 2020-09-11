@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Grillas 1</title>
+	<style>
+    body{
+        margin:0;
+    }
+	#grid-container {
+		display: grid;
+		column-gap: 10%;
+		row-gap: 50px;
+		grid-template-columns: 50% 20% auto;
+		background-color: gold;
+		padding: 20px;
+		border:1px solid navy;
+        width: 70%;
+        margin:0 auto;
+        
+	}	
+	.grid-item {
+		background-color: silver;
+		border: 1px solid black;
+		padding: 20px;
+		font-size: 24px;
+		text-align: center;
+	}	
+    #grid-container div:nth-child(4){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #grid-container div:nth-child(4) h1{
+        width:100%;
+    }
+
+    #grid-container div:nth-child(4) > div{
+        width: 80px;
+        height: 80px;
+        background-color: pink;
+        margin: 10px;
+    }
+
+	@media all and (max-width: 768px) {
+		#grid-container {
+			grid-template-columns: 50% auto;
+            box-sizing: border-box;
+            width: 100%;
+		}
+	}
+
+	@media all and (max-width: 500px) {
+		#grid-container {
+			grid-template-columns:auto;
+		}
+	}	
+
+	</style>	
+</head>
+<body>
+	<div id="grid-container">
+		<div class="grid-item">
+                1
+                <p>Lorem ipsum</p>
+        </div>
+		<div class="grid-item">2</div>
+		<div class="grid-item">3</div>
+		<div class="grid-item">
+            <h1>Título de la caja 4</h1>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+		<div class="grid-item">5</div>
+		<div class="grid-item">6</div>
+		<div class="grid-item">7</div>
+		<div class="grid-item">8</div>
+		<div class="grid-item">9</div>
+		<div class="grid-item">10</div>
+		<div class="grid-item">11</div>
+		<div class="grid-item">12</div>
+	</div>
+</body>
+</html>

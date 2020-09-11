@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    #container{
+        width: 70%;
+
+    }
+    #form{
+        width: 50%;
+        display: inline-block;
+        margin:0px;
+        padding: 0px;   
+        background-color: cornflowerblue;
+    }
+    label{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left:20px;
+        column-gap: 10px;
+        margin:0px;
+    }
+    label[class="texto"]{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    
+  
+    input{
+        display: inline-block;
+        margin: 10px auto;
+        border-radius: 20px;
+    }
+
+    #botones{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        margin: 10px auto; 
+        padding: 10px;
+    }
+
+    input[type="checkbox"]{
+            display: inline-block;
+        }
+    
+    input[type="submit"]{
+        display: block;
+        margin-left: 170px;
+        margin-top: 10px;
+    }
+
+    input[type="checkbox"]{
+        display: flex;
+        margin-left: 170px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    label[check]{
+        display:flex;
+    }
+
+    span{
+        display: flex;
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+    <div id="container">
+    <form id="form">
+        <label class="texto" for="d"> Nombre</label>
+        <label class="texto" for="p">Password</label>
+        <input type="Text">
+        <input type="password">
+    </form>
+        <input type="submit" value="Login!">
+        <input type="checkbox"> <span>Acepto todo</span>
+    </div>
+</body>
+</html>

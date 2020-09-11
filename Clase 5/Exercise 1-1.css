@@ -1,0 +1,43 @@
+
+main{
+    display: flex;
+    width: 50%;
+    height: 300px;
+    background-color: blueviolet;
+    float: left;
+    justify-content: space-evenly;
+    align-items: center;
+    /*
+        Valor x defecto nowrap
+    */
+    flex-wrap: nowrap;
+}
+aside{            
+    width: 30%;
+    height: 300px;
+    background-color: gold;
+    float: left;
+}        
+div{            
+    border:1px solid black;
+    margin:10px;
+    width:150px;
+    height: 150px;
+}
+#c1{
+    background-color: red;
+    order: 2;
+}
+#c2{
+    background-color: blue;
+    order: 1;
+    
+}
+#c3{
+    background-color: green;
+    order: 4;
+}
+#c4{
+    background-color: silver;
+    order: 3;
+}                        

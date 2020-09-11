@@ -1,0 +1,120 @@
+body{
+    margin: 0px
+}
+
+#container{
+    width: 100%;
+}
+
+main{
+    width: 100%;
+}
+
+#firstBox{
+    width: 100%;
+    border:1px solid black;
+    float: left;
+}
+
+#title{
+    font-size: 2em;
+    text-align: center;
+}
+
+#mainText{
+    column-count: 2;
+    column-gap: 10px;
+    margin-left: 2%; 
+    column-rule: 1px solid silver;
+    float: left;
+    width: 70%;
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+}
+aside{
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+aside img{
+            width: 100%;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+    #bottomBox{
+        display: grid;
+        grid-template-columns: 14% 34% 34% 14%;
+        grid-template-areas: "b1 b2 b3 b4";
+        float: left;
+        width: 100%;
+        margin: 2%;
+        justify-content: space-between;
+           
+    }
+    .boxes{
+        border:1px solid black;
+        min-height: 100px;
+        margin-left: 1%;
+    }
+    #box1{
+        grid-area: b1;
+    }
+    #box2{
+        grid-area: b2;
+    }
+    
+    #box3{
+        grid-area: b3;
+    }
+    
+    #box4{
+        grid-area: b4;
+    }
+
+    #secondBox{
+        width: 100%;
+        float: left;
+        border:1px solid black;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #titleBottom{
+        font-size: 2em;
+        text-align: center;
+
+    }
+    table{
+        width: 20%;
+        min-height: 40%;
+        font-size: 1.5 em;
+        background-color: lightcoral;
+        float: left;
+        margin-right: 50px;
+        padding: 0px;
+        cursor: pointer;
+    }
+    #top{
+        background-color: darkblue;
+        color: white;
+    }
+    
+    table td{
+        background-color:brown;
+    }
+    table tr td:first-child{
+        color: blue;
+    }
+    table tr td:last-child{
+        color: blue;
+    }  
+    
+    #color{
+        background-color: blueviolet;
+    }

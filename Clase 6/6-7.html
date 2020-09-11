@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi texto ⌚</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<style>
+		body {
+		  margin: 20px;
+		}
+
+		    .sidebar {
+		        grid-area: sidebar;
+		    }            
+
+		    .sidebar2 {
+		        grid-area: sidebar2;
+		    }
+
+		    .content {
+		        grid-area: content;
+		    }
+
+		    .header {
+		        grid-area: header;
+		    }
+
+		    .footer {
+		        grid-area: footer;
+		    }
+
+            nav{
+                grid-area: nav;
+                height: 50px;
+            }
+            nav ul{
+                margin:0;
+                display: flex;
+                list-style: none;
+                justify-content: space-evenly;
+                padding:0;
+            }
+
+
+
+		  #contenedor {
+	        background-color: #fff;
+            min-width: 320px;
+		    color: #444;              
+		    display: grid;
+		    grid-gap: 10px;		    
+            grid-template-columns: 30% auto 20%;
+            grid-template-areas:
+            "header  header  header"
+            "nav  nav  nav"
+            "sidebar content sidebar2"
+            "footer  footer  footer";
+            max-width: 80%;		
+            text-align: center;   
+            margin:0 auto; 
+		  }
+
+		.box {
+		  background-color: #444;
+		  color: lightblue;
+		  min-height: 250px;
+		  border-radius: 5px;
+		  padding: 10px;
+		  font-size: 150%; 
+		}
+
+		.header,
+		.footer,nav.box {
+		  background-color: #999;
+		   min-height: 50px;
+		}
+
+		.fas{
+			color:blue;
+		}
+
+        @media all and (max-width: 800px) {
+            body{margin:0;}
+            #contenedor{max-width: 100%;
+            grid-template-areas:
+            "header  header  header"
+            "nav  nav  nav"
+            "sidebar content content"
+            "sidebar2 sidebar2 sidebar2"
+            "footer  footer  footer";            
+            }
+            .sidebar2{
+                min-height: 50px;
+            }
+        }
+
+        @media all and (max-width: 500px) {
+            body{margin:0;}            
+            #contenedor{max-width: 100%;
+            grid-template-areas:
+            "header  header  header"
+            "nav  nav  nav"
+            "content content content"
+            "sidebar2 sidebar2 sidebar2"
+            "footer  footer  footer";            
+            }
+            .sidebar{
+                display: none;
+            }
+            nav ul{
+                flex-wrap: wrap;
+            }
+            nav ul li{
+                width: 40%;
+            }
+        }
+	
+
+	</style>	
+</head>
+<body>
+<div id="contenedor">
+  <div class="box header">Header</div>
+  <nav class="box">
+      <ul>
+          <li><i class="fas fa-anchor"></i> Item 1</li>
+          <li><i class="fas fa-biking"></i> Item 2</li>
+          <li><i class="fas fa-times-circle"></i> Item 3</li>
+          <li><i class="fas fa-square"></i>Item 4</li>
+      </ul>
+  </nav>
+  <div class="box sidebar">Sidebar</div>
+  <div class="box sidebar2">Sidebar 2</div>
+  <div class="box content">Content</div>
+  <div class="box footer">Footer</div>
+</div>	
+</body>
+</html>

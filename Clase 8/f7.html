@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            min-width:320px;
+            display: flex;
+            background:lightsalmon;
+            justify-content: space-between;
+            padding:2px 10px;
+            box-sizing:border-box;
+            flex-wrap: nowrap;
+        }
+        form{
+            flex-grow:2;
+            padding: 0 5px;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-wrap: nowrap;
+
+        }
+        form input[type="search"]{
+            width:95%;
+        }
+        #topleft{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        #topright ul{
+            display: flex;
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+        input[type="submit"]{
+            width:24px;
+            height: 24px;
+            background-image: url("lupa.png");
+            background-size: cover;
+            border:0;
+            border-radius:50%;
+            background-color:transparent;
+        }
+        input{
+            vertical-align: middle;
+        }
+      
+    </style>    
+</head>
+<body>
+    <header>
+        <div id="topleft">
+            <img src="menu.png" alt="" width="24">
+            <img src="logo.png" alt="" width="24">
+        </div>
+        <form>
+            <input type="search" placeholder="Buscar...">
+            <input type="submit" value="">
+        </form>
+        <div id="topright">
+            <ul>
+                <li>☕</li>
+                <li>⭐</li>
+                <li>🌅</li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

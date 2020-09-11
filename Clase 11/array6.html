@@ -1,0 +1,16 @@
+<script>
+    var paises = ["Argentina","Alemania","Brasil","Chile","Estados Unidos","Belgica"];
+    //Los países que empiezan con B
+    for(i in paises){
+        if(paises[i][0] == "B"){
+            console.log(paises[i]);
+        }
+    }
+    //Los países que terminan con a
+    console.log("-------------------")
+    for(i in paises){
+        if(paises[i][paises[i].length-1] == "a"){
+            console.log(paises[i]);
+        }
+    }    
+</script>

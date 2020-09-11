@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>      
+        #contenedor{
+            background-color: lightslategrey;
+            padding-bottom: 1000px;
+        }
+        #contenedor > div{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid silver;
+        }
+        #contenedor div:nth-child(1){
+            background-color: chocolate;
+        }
+        #contenedor div:nth-child(2){
+            background-color: blue;
+            position: relative;
+            top: -20px;
+            left: 20px;
+        }
+        #contenedor div:nth-child(3){
+            background-color: gold;
+            position: absolute;
+            margin:0;
+            top: 0;
+            right: 0;
+        }
+        #contenedor div:nth-child(4){
+            background-color: green;
+            position: fixed;
+            right: 10px;
+            bottom: 0;
+            margin:0;
+            z-index: 2;
+            opacity: 0.8;
+        }
+        #contenedor div:nth-child(5){
+            background-color: magenta;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            margin:0;            
+        }                        
+        #contenedor div:nth-child(6){
+            background-color: red;
+            position: absolute;
+            left: 50%;
+        }
+        #contenedor div:nth-child(7){
+            background-color: lightgreen;
+        }                        
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

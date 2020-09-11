@@ -1,0 +1,136 @@
+#contenedor{
+    width:100%;
+    min-width: 360px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* como era para que la img tome todo el ancho del header hasta llenar el espacio?*/
+
+header{
+    width: 100%;
+    max-height: 250px;
+    Margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#imgHeader{
+    width: 100%;
+    height: 200px;
+    }
+
+nav{
+    width: 100%;
+    max-height: 150px;
+    Margin: 0px;
+    padding: 0px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#menu{
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    text-decoration-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+nav ul li{
+    cursor:pointer;
+}
+
+main{
+    width: 100%;
+    max-height: 1440px;
+    Margin: 0px;
+    padding: 0px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+
+#mainBox{
+    width: 80%;
+    max-height: 1000px;
+    Margin: 0px;
+    padding: 0px;
+    border: 1px black solid;
+    box-sizing: border-box;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    display: grid; /* si no uso display: grid, todo se cae */
+}
+
+#imgMain{
+    width: 300px;
+    max-height: 250px;
+    Display: flex;
+}
+ /*hace falta? ver bien qe hacer, todavia no lo entiendo, toma a todos los hijos directos*/
+
+main > p{
+    width: 100%;
+    text-align: center;
+}
+
+
+article{
+    /* si pongo al 50% se sube (? */
+    width: 100%;
+    max-height: 200px;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+    /* cuando achico se superpone al resto de los objetos */
+
+#block {
+    width: 25%;
+    min-height: 75px;
+    margin: 5% auto;
+    padding: 0px;
+}
+
+#boxBottom {
+    width: 100%;
+    max-height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.boxes {
+    width: 20%;
+    min-height: 100px;
+    border: 1px black solid;
+}
+
+@media (max-width: 850px){
+    #block {
+        width: 45%;
+        }
+@media (max-width: 550px){
+        #block {
+         width: 75%;
+        }
+    }
+}

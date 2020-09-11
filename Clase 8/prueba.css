@@ -1,0 +1,128 @@
+#container{
+    width: 450px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+}
+
+form h1{
+    text-align: center;
+}
+.boxes{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+#firstBox{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+label{
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+input[type="email"]{
+    width: 55%;
+    margin-left: 20%;
+}
+#secondBox{
+    display:flex;
+
+}
+
+#clothes{
+    width: 50%;
+    /* text-align: center; si uso eso, no quedan centrados, remera queda mal ubicada y no se porque*/
+    display:flex;
+    flex-direction: column;
+}
+
+.buttonCheck{
+    margin: 4.5px;
+    list-style:none;
+}
+input[type="checkbox"]{
+    margin-left: 20%;
+}
+
+#counter{
+    width: 50%;
+    text-align: center;
+    float: right;
+}
+
+
+input[type="number"]{
+    margin: 1px auto;
+    border-radius: 10px;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+}
+
+.thirdBox{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    }
+
+#date{
+    width: 50%;
+    text-align: center;
+    float:right;
+}
+
+/*porque label[for="c"] no se mueve cuando pongo el text align center*/
+
+label[for="c"]{
+    text-align: center;
+    margin-left: 12px;
+}
+input[type="text"]{
+    text-align: center;
+    margin-left: 10px;
+}
+#code{
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+#boxDate{
+    width: 10%;
+    float: right;
+    margin-right: 50px;
+    min-height: 5px;
+    background-color: grey;
+
+}
+
+label[for="d"]{
+    margin-right: 60px;
+}
+
+#buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+input[name="a"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 6px;
+    }
+
+input[name="b"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 6px;
+    }

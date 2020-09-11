@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,label{
+            display: block;
+            transition:5s;
+        }
+        input[type="checkbox"]{
+            display: inline-block;
+        }
+        textarea{
+            resize:none;
+            width:170px;
+            height: 50px;
+            transition: 1s;
+        }
+        textarea:focus{
+            height: 120px;
+        }
+        input[type="text"]:focus{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Comentario</label>
+        <textarea></textarea>        
+        <label for="n">Nombre</label>
+        <input type="text" id="n" name="nombre">
+        <label for="e">Email</label>
+        <input type="email" id="e" name="email">     
+        <label for="w">Web</label>
+        <input type="url" id="w" name="web">    
+        <input type="checkbox"> <span>Acepto todo</span>
+        <input type="submit" value="Enviar">        
+    </form>
+</body>
+</html>

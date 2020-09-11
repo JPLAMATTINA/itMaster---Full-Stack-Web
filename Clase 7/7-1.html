@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        #contenedor{
+            margin: 0 auto;
+            width: 100%;
+            min-width: 360px;
+            max-width: 1440px;
+        }
+        #seccion1{
+            float:left;
+            width:70%;
+        }
+        aside{
+            position:fixed;
+            width:29%;
+            top:1%;
+            right:1%;
+            background:orchid;
+        }
+        #intotheaside{
+            width: 90%;
+            margin: 1% 5%;
+            height: 80vh;
+            background:gold;
+        }
+        header{
+            width:100%;
+            background: red;
+            color: white;
+            text-align: center;
+        }
+        main{
+            text-align:center;
+        }
+        .wide{
+            width: 80%;
+            height: 100px;
+            margin: 1% 10%;
+            background: brown;
+            float:left;
+
+        }
+        #cajasingles{
+            width:100%;
+            padding:5%;
+            box-sizing: border-box;
+        }
+        .single{
+            width: 40%;
+            height: 50px;
+            margin: 1% 5%;
+            background:orange;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="seccion1">
+            <header>
+                <h1>Heading</h1>
+            </header>
+            <main>
+                <h2>Main</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam quibusdam provident dolorem quae nisi praesentium cumque earum consequuntur vitae? Fuga beatae dolor laudantium blanditiis odit ex at quam, voluptates ducimus iste, nihil est modi non? Dolor eos, illum velit sed praesentium, placeat, quo rerum corrupti suscipit nemo tenetur ea aut quidem soluta pariatur eum veniam quisquam quos harum officia facere. Esse eum, quos maxime inventore iste quis quasi iusto voluptas modi! Distinctio inventore tempora iste ducimus reiciendis in id quidem libero eligendi ad? Odit repudiandae distinctio sed consectetur voluptatum sit, cum neque pariatur fugiat velit non perspiciatis iure inventore!</p>
+                <div class="wide"></div>
+                <div id="cajasingles">
+                    <div class="single"></div>
+                    <div class="single"></div>
+                    <div class="single"></div>
+                    <div class="single"></div>
+                </div>
+                <div class="wide"></div>
+            </main>
+        </div>
+        <aside>
+            <h3>Aside</h3>
+            <div id="intotheaside"></div>
+        </aside>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+table{
+    font-size:1em;
+    background-color: lightcoral;
+    
+}
+table td{
+    background-color: gainsboro;
+    text-align: center;
+}
+table tr td:first-child{
+    color: black;
+}
+table tr td:last-child{
+    color: black;
+}  

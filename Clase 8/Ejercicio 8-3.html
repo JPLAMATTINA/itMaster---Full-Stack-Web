@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ejercicio 8-3.css">
+</head>
+
+<body>
+    <form>
+        <div id="container">
+            <div id="firstBox">
+                <div id="name">
+                    <label for="n">Nombre</label>
+                    <input type="text">
+                </div>
+                <div id="lastName">
+                    <label for="a">Apellido</label>
+                    <input type="text">
+                </div>
+                <div id="emailBox">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email">
+                </div>
+            </div>
+            <div id="coments">
+                <label>Comentario</label>
+                <textarea></textarea>
+            </div>
+            <div id="lastBox">
+                <div id="age">
+                    <label>Edad</label>
+                    <input type="number" min="0" max="120">
+                </div>
+                <div id="known">
+                    <label>Cómo nos conoció</label>
+                    <select name="option">
+                        <option>Elegir ...</option>
+                        <option>Amigos</option>
+                        <option>Redes Sociales</option>
+                        <option>Propaganda</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Comentar">
+        </div>
+    </form>
+</body>
+
+</html>

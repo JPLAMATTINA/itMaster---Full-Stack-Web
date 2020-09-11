@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size:2em;
+            text-align: center;
+        }
+        h1{
+            color: red;
+            animation: titulo1 2s infinite;
+        }
+
+        @keyframes titulo1 {
+            from {
+                background-color: indigo;
+            }
+
+            to {
+                background-color: gold;
+            }
+        }     
+        h2{
+            animation: titulo2 5s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes titulo2 {
+            0% {
+                transform: translateY(0px);
+            }
+            20%{
+                transform: translateY(200px);
+            }
+            50% {
+                transform: translateY(20px);
+            }
+            100% {
+                transform: translateY(500px);
+            }            
+        }         
+    </style>
+</head>
+<body>
+    <h1>Soy el título del Mundo</h1>
+    <h2>Soy el subtítulo</h2>
+</body>
+</html>

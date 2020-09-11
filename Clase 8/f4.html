@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label,input,select{
+            display: block;
+            width:200px;
+        }
+        form{
+            width:200px;
+            margin:0 auto;
+        }
+        fieldset > *,input[type="radio"]{
+            display: inline-block;
+            width: auto;
+        }
+        fieldset label{
+            width: 130px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Mi Delivery Premium</h1>
+        <label>Nombre</label>
+        <input type="text">
+        <label>Email</label>
+        <input type="email" placeholder="Dirección válida">        
+        <label>Teléfono</label>
+        <input type="tel">
+        <label>Elegir promo especial</label>                
+        <select name="promo">
+            <option>Elegir ...</option>
+            <option>Pizza</option>
+            <option>Empanadas</option>
+            <option>Bebida</option>
+        </select>
+        <label>Cantidad</label>
+        <input type="number" value="1" min="1" max="10">
+        <label>Color de la caja</label>
+        <input type="color">
+        <fieldset>
+            <legend>+ Comidas</legend>            
+            <input type="checkbox" name="comidas" checked> <label>Milanesa</label>
+            <input type="checkbox" name="comidas"> <label>Medialunas</label>
+            <input type="checkbox" name="comidas"> <label>Canelones</label>
+            <input type="checkbox" name="comidas"> <label>Ñoquis</label>
+            <input type="checkbox" name="comidas"> <label>Hamburguesas</label>
+            <input type="checkbox" name="comidas"> <label>Tira de asado</label>
+            <input type="checkbox" name="comidas" checked> <label>Arepas</label>
+        </fieldset>
+        <input type="radio" name="envio" checked> <span>Envio</span>
+        <input type="radio" name="envio"> <span>Take Away</span>
+        <input type="datetime-local" min="2020-08-27T11:30" max="2020-09-27T11:30">
+        <input type="submit" value="Pedir">
+    </form>
+</body>
+</html>
