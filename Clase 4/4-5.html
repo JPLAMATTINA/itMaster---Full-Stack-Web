@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        #contenedor{
+            width:100%;
+            max-width: 1440px;
+            min-width: 360px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        header{
+            width: 100%;
+            background-color: cadetblue;
+            color: white;
+            float: left;
+        }
+        nav{
+            width: 30%;
+            background-color: green;
+            color: white;
+            float: left; 
+            min-height: 500px;           
+        }
+        main{
+            width: 50%;
+            background-color:silver;            
+            float: left; 
+            min-height: 500px;           
+        }        
+        aside{
+            width: 20%;
+            background-color:lightcyan;            
+            float: left; 
+            min-height: 500px;           
+        }        
+        footer{
+            width: 100%;
+            background-color: black;
+            color: white;
+            float: left;
+        }        
+        main img{
+            width: 50%;
+            margin: 0 25%;
+        }           
+        @media (max-width: 800px) {
+            nav{
+                width: 100%;
+                min-height: auto;
+            }
+            nav ul{
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li{
+                display: inline-block;
+                width: 15%;
+                background-color: brown;
+                line-height: 200%;
+            }
+            main{
+                width: 70%;
+            }
+            aside{
+                width: 30%;
+            }
+        }         
+
+        @media (max-width: 600px) {
+            nav ul li{
+                font-size:1.2em;
+            }
+            main{
+                width: 100%;
+            }
+            aside{
+                display: none;
+            }
+            
+        }     
+    </style>    
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>Soy el título del Mundo Mundial</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                <li>Menu 4</li>
+                <li>Menu 5</li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Soy el Main</h2>
+            <img src="https://via.placeholder.com/150/0000FF/808080 ?Text=Imagen" alt="">
+        </main>
+        <aside>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ol>
+        </aside>
+        <footer>
+            <small>Ejercicio by @damiande - Buenos Aires, Argentina</small>
+        </footer>
+    </div>    
+</body>
+</html>

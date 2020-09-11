@@ -1,0 +1,149 @@
+#container{
+    width: 80%;
+    min-width: 360px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    min-height: 100px;
+    border: 1px black solid;
+    float: left;
+    box-sizing: border-box;
+}
+
+.boxes{
+    width: 15%;
+    min-height: 70px;
+    margin: 1%;
+    padding: 0px;
+    float: left;
+}
+
+#B1{
+    float: left;
+    border: 1px black solid;
+    box-sizing: border-box;
+}
+
+#B2{
+    float: left;
+    border: 1px black solid;
+    box-sizing: border-box;
+}
+
+#centerBox{
+    width: 30%;
+    min-height: 70px;
+    margin: 1%;
+    padding: 0px;
+    float: left;
+    border: 1px black solid;
+    box-sizing: border-box;
+}
+
+#B3{
+    float: left;
+    border: 1px black solid;
+    box-sizing: border-box;
+}
+
+#B4{
+    float: left;
+    border: 1px black solid;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    min-height: 350px;
+    margin: 0px auto;
+    margin-top: 10px;
+    float: left;
+    border: 1px black solid;
+    box-sizing: border-box;
+}
+
+.textCenter{
+    width: 25%;
+    min-height: 150px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+#T1,#T2{
+    color: blue;
+    margin: 10px;
+    margin-left: 15%;
+    float: left;
+    }
+
+section{
+    width: 100%;
+    min-height: 200px;
+    margin: 0px auto;
+    padding: 0px;
+    float: left;
+}
+
+.boxBottom{
+    width: 35%;
+    min-height: 150px;
+    margin: 5px auto;
+    margin-left: 75px;
+    padding: 0px; 
+    float: left;
+    border: 1px black solid;
+    box-sizing: border-box;
+}
+
+@media (max-width: 750px){
+
+    #centerBox{
+        width: 50%;
+    }
+
+    #B3{
+        width: 41%;
+        float: left;
+        border: 1px black solid;
+        box-sizing: border-box;
+    }
+    
+    #B4{
+        width: 41%;
+        float: left;
+        border: 1px black solid;
+        box-sizing: border-box;
+    }
+
+    #T1{
+        width: 40%;
+        color: green;
+        margin: 10px;
+        margin-left: 35%;
+        float: left;
+        }
+
+    #T2 {
+        width: 40%; 
+        color: red;
+        margin: 10px;
+        margin-left: 35%;
+        float: left;
+    }
+
+    .boxBottom{
+        width: 80%;
+        min-height: 40px;
+        margin: 5px auto;
+        margin-left: 40px;
+        padding: 0px; 
+        float: left;
+        border: 1px black solid;
+        box-sizing: border-box;
+    }
+}
+ 
