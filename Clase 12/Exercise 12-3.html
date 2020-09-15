@@ -1,0 +1,32 @@
+<!-- ●  Dado el array numeros = [10,50,-10,-5,25,30,-111] generar dos nuevos arrays,
+     uno con números positivos y otro con números negativos. 
+            Recorro el array y hago push para un lado y push para el otro si son negativos o positivos
+        -->
+
+        <script>
+
+            var numeros = [10, 50, -10, -5, 25, 30, -111];
+            var numPos = [];
+            var numNeg = [];
+    
+            for (i in numeros) {
+    
+                if (numeros[i] >= -0) {
+                    numPos.push(numeros[i]);
+                }
+    
+            }
+            console.log(numPos);
+    
+            for (i in numeros) {
+    
+                if (numeros[i] <= -1) {
+                    numNeg.push(numeros[i]);
+                }
+    
+            }
+            console.log(numNeg);
+    
+    
+        </script>
+    

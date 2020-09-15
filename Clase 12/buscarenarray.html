@@ -1,0 +1,12 @@
+<script>
+    var paises = ["Argentina","Alemania","Brasil","Chile","Estados Unidos","Belgica"];
+    //Ejemplo para devolver posicion de Argentina
+    var posicion = paises.indexOf("Alemania")
+    console.log(posicion);
+
+    var busqueda = "Brasil";
+    var reemplazo = "República Federativa de Brasil";
+    var posicionbr = paises.indexOf(busqueda);       
+    paises[posicionbr] = reemplazo;
+    console.log(paises);
+</script>

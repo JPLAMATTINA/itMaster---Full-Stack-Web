@@ -1,0 +1,16 @@
+<!-- ●	Dado el array nombres [“Dami”,”Pedro”,”Ana”,”Jorge”,”Eugenio”,”Analía”,”Amanda”,”amalia”] 
+    mostrar los nombres que comiencen y terminen con a. Recorrerlo con un for i in.-->
+
+    <script>
+
+            var nombres = ["Dami", "Pedro", "Ana", "Jorge", "Eugenio", "Analía", "amanda", "Amalia"];
+
+
+            for (i in nombres) {
+                //console.log("Primer letra: "+nombres[i][0]);
+                //console.log("Ultima letra: "+nombres[i][nombres[i].length -1]);
+                if ((nombres[i][0].toLocaleLowerCase() == "a") && (nombres[i][nombres[i].length - 1].toLocaleLowerCase() == "a")) {
+                    console.log(nombres[i]);
+                }
+            }
+    </script>

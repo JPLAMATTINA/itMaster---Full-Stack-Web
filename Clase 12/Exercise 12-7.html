@@ -1,0 +1,34 @@
+<!--
+    ●	Dada una variable de texto, indicar si es un dominio es válido. Condiciones:
+○	Tiene que comenzar con http:// o https://
+○	Debe contener un .
+○	No puede terminar con .
+○	No puede contener @
+
+-->
+
+<script>
+
+    var texto = "https://sanlorenzo.com.ar/"
+
+// console.log(url.substring(0,8));
+// console.log(url.indexOf("."));
+// operador Logico || = or ;
+
+if( (texto.substring(0,7).toLocaleLowerCase() == "http://") || (texto.substring(0,8).toLocaleLowerCase() == "https://" ) 
+&& 
+(texto.indexOf(".") >-1  && texto[texto.length-1] != ".") 
+&& 
+
+// permite que si el sitio contiene @ sea un dominio inválido.
+
+texto.indexOf("@") == -1)
+{
+    console.log("Dominio valido.");
+}
+else {
+    console.error("Dominio invalido.");
+}
+
+
+</script>
