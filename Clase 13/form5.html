@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1 id="titulin"></h1>
+        <input type="text" placeholder="Nombre ..." id="nombre">
+        <input type="button" onclick="mostrar()" value="Mostrar">
+        <p id="parrafin"></p>
+    </form>
+    <script>
+        function mostrar(){
+            // Recoge el valor del formulario
+            var n = document.getElementById("nombre").value;
+            // innerHTML escribe el valor en el parrafin
+            document.getElementById("parrafin").innerHTML = n
+            // innerHTML escribe el valor en el título
+            document.getElementById("titulin").innerHTML = "El titulo de hoy: " + n
+        }
+    </script>
+</body>
+</html>

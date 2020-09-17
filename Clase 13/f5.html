@@ -1,0 +1,20 @@
+<script>
+    // Debe ser string, debe tener al menos 5 caracters
+    function validador(texto){
+        console.log("Inicinado función ...")
+        if(typeof(texto) === 'string'){
+            if(texto.length >=5){
+                var respuesta = texto + " es válido";
+            }   
+            else{
+                var respuesta = texto + " no cumple con el mínimo de caracteres";
+            }
+        }
+        else{
+            var respuesta = "El contenido debe ser un texto";
+        }
+        return respuesta;
+    }
+
+    console.log(validador("12345"));    
+</script>

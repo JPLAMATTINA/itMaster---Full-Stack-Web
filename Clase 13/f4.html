@@ -1,0 +1,16 @@
+<script>
+    function preciofinal(precio){
+        if(typeof(precio) != "number"){
+            var calculo = "Incalculable"
+        }
+        else{
+            var alicuota = 21;
+            var calculo = (precio + (precio * alicuota/100)).toFixed(2)
+        }
+        return calculo
+    }
+
+    console.log(preciofinal(144))    
+    console.log(preciofinal("101"))   
+    console.log(preciofinal("aaa"))    
+</script>

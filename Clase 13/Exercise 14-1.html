@@ -1,0 +1,28 @@
+<!--●	Crear una función que me diga si el número que recibe como parámetro es positivo o no (sin usar formulario).
+○	Indicar ERROR si no es un número.
+-->
+
+<script>
+    
+    function parametro(numero){
+        if(typeof(numero) != "number"){
+            return console.error("no es un numero")
+            }
+
+        if (numero > 0 ) {
+            console.log("es positivo")
+        } else if(numero < 0){
+            console.log("es negativo")
+        } else {
+            console.log("es cero")
+
+        } 
+    }
+    parametro(4);
+    parametro(-5);
+    parametro(0);
+    parametro(11);
+
+</script>
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>        
+        <!-- 
+            El onkeyup se puede aplicara a campos sobre los que escribimos, en lugar de poner un botón y en tiempo real nos permite capturar el contenido de lo que escribe el usuario y mostrarlo en otro lugar con innerHTML (por ejemplo)
+         -->
+        <input type="text" placeholder="Nombre ..." id="nombre" onkeyup="mostrar()">        
+        <p id="parrafin"></p>
+        <p id="caracteres"></p>
+    </form>
+    <script>
+        function mostrar(){
+            var n = document.getElementById("nombre").value;
+            document.getElementById("parrafin").innerHTML = n            
+            document.getElementById("caracteres").innerHTML = "Caracteres: " + n.length;            
+        }
+    </script>
+</body>
+</html>

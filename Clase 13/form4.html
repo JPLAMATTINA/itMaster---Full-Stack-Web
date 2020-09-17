@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="t">
+        <input type="button" onclick="agregar()" value="Agregar">
+    </form>
+    <script>
+        //Como variable global se genera vacío al iniciar la página
+        var datos = [];
+        function agregar(){            
+            // si estuviera var datos = []; dentro de la función se vacía cada vez que es llamada la función
+            var t = document.getElementById("t").value;
+            if(t.length >= 2){
+                datos.push(t);
+            }
+            else{
+                console.log("Error en el dato");
+            }
+            console.log(datos);
+        }
+    </script>
+</body>
+</html>
