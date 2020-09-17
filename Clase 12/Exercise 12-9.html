@@ -1,0 +1,29 @@
+<!--●	Dada una variable que contiene un código, indicar si cumple con todas estas características:
+○	Comienza con ABC.
+○	No termina con $
+○	Tiene 8 caracteres o más
+○	No se encuentra en el array ["ABC12345","ABC12349","ABC12344"]
+-->
+
+<script>
+    var codigo = "ABC6789"
+    var codigos = ["ABC12345$", "ABC123555", "AFJP12345"];
+
+    console.log(codigos.indexOf(codigo));
+
+    if ((codigos.substring(0,2).toLocaleUpperCase() == "ABC") 
+        && (codigo[codigo.length-1] != "$") 
+        && (codigo.length >= 8) 
+        && (codigos.indexOf(codigo) == -1) )
+        {
+
+        console.log("el codigo ingresado es correcto")}
+
+        else {
+
+        }
+
+// LO ROMPI LO ROMPI LO ROMPI, HACE 20 años que rompes las cosas
+    
+
+</script>

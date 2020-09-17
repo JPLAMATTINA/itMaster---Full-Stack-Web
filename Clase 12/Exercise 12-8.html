@@ -1,0 +1,34 @@
+<!-- 
+    ●	Dado el array: pollo, asado, fideos, pescado
+	Indicar si el valor de la variable buscar se encuentra 
+al principio o al final del array (si está en otro posición indicar 
+que no se encuentra al principio o al final). Usar IndexOf.
+-->
+
+<script>
+
+    var comidas = ["pollo", "asado", "fideos", "pescado"];
+    var buscar = "pollo";
+
+        // .indexOf () llama a la función, buscar dentro del array comidas [en la posición donde i  se encuentra]
+        // si existe va a dar como resultado que es 1, sino -1
+
+        var encontrado =comidas.indexOf(buscar) 
+
+        if(encontrado > -1){
+        if(encontrado == 0) {
+            console.log(buscar +" se encuentra al inicio.");
+        }
+        else if (encontrado == comidas.length - 1) {
+            console.log(buscar +" se encuentra al final.");
+        }
+        else {
+            console.log(buscar+" no se encuentra al principio, ni al final.");
+        }
+    }
+    else {
+        console.error("Error, palabra no se encuentra.");
+    }     
+
+
+</script>

@@ -11,16 +11,17 @@
 
     var texto = "https://sanlorenzo.com.ar/"
 
-// console.log(url.substring(0,8));
-// console.log(url.indexOf("."));
+
 // operador Logico || = or ;
+//substring toma desde la posición 0 hasta la 7.
+// se puede realizar con slice
 
 if( (texto.substring(0,7).toLocaleLowerCase() == "http://") || (texto.substring(0,8).toLocaleLowerCase() == "https://" ) 
 && 
 (texto.indexOf(".") >-1  && texto[texto.length-1] != ".") 
 && 
 
-// permite que si el sitio contiene @ sea un dominio inválido.
+// el indexOf permite que si el sitio contiene @ no sea un dominio inválido.
 
 texto.indexOf("@") == -1)
 {
@@ -29,6 +30,4 @@ texto.indexOf("@") == -1)
 else {
     console.error("Dominio invalido.");
 }
-
-
 </script>
