@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            margin:0;
+            display: flex;
+            list-style: none;
+            padding:0;
+        }
+        ul li{
+            margin:10px;
+            cursor: pointer;      
+            transition: 0.5s;      
+        }
+        ul li:hover{
+            transform: scale(1.1);
+        }
+        #imagengrande{
+            margin: 10px;
+            width:460px;
+            height: 460px;            
+            transition: 2s;
+        }
+    </style>    
+</head>
+<!-- 
+    onload es el evento cuando carga la página se le coloca al body
+ -->
+<body onload="cambiar(0)">
+    <ul>
+        <li onclick="cambiar(0)"><img src="https://via.placeholder.com/100.png/f9f/fff"></li>
+        <li onclick="cambiar(1)"><img src="https://via.placeholder.com/100.png/c9f/fff"></li>
+        <li onclick="cambiar(2)"><img src="https://via.placeholder.com/100.png/a90/fff"></li>
+        <li onclick="cambiar(3)"><img src="https://via.placeholder.com/100.png/09e/fff"></li>
+    </ul>     
+    <div id="imagengrande"></div>
+    <script>
+        var imagenes = ["https://via.placeholder.com/460.png/f9f/fff","https://via.placeholder.com/460.png/c9f/fff","https://via.placeholder.com/460.png/a90/fff","https://via.placeholder.com/460.png/09e/fff"];    
+        
+        function cambiar(n){
+            document.getElementById("imagengrande").style.backgroundImage = "url("+imagenes[n]+")";
+        }    
+
+    </script>   
+</body>
+</html>

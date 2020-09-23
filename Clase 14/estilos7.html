@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            transition: 5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soy el título</h1>
+    <input type="color" onchange="colorear()" id="c">
+    <h1>Soy otro H1</h1>
+    <script>
+        function colorear(){
+            var colo = document.getElementById("c").value;
+            // Seleccion solo el primer h1
+            document.querySelector("h1").style.color = colo;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!--●	Crear un formulario que pida al usuario un valor (input type number) y que tenga un select que ofrezca las opciones:
+○	De dólares a pesos
+○	De pesos a dólares
+○	Cuando el usuario toca el botón calcular: Mostrar el resultado en un párrafo
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 14-4</title>
+</head>
+<body>
+    <form>
+        <label>Ingrese un valor</label>
+        <input type="button" onclick = "mostrar()" value="mostrar">
+        <input type ="number" placeholder="Ingrese número" id="numero">
+        <select id="moneda">
+            <option value = "dolar">U$D a $</option>
+            <option value = "peso" >$ a U$D</option>
+        </select>
+        <p id="resultado"></p>
+    </form>
+    <script>
+        function mostrar(){
+            var a = document.getElementById("numero").value;
+            var b = document.getElementById("moneda").value;
+            var cotizacion = 135
+            
+            if (b == "dolar"){
+                    document.getElementById("resultado").innerHTML= ("son: $ " + (a/cotizacion) )
+                   }
+             else {
+                    document.getElementById("resultado").innerHTML= ("son: $ " + (a*cotizacion) )
+                }
+             }
+    </script>
+</body>
+</html>
+

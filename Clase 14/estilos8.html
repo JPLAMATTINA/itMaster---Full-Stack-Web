@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="caja">
+        <h1>Soy el título</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore illo commodi fugiat quisquam optio amet consectetur, exercitationem dolor necessitatibus voluptatum maiores deserunt non voluptates odio est, fugit modi hic facere.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel asperiores et commodi laborum dolorem repellat delectus amet impedit, voluptate sapiente cum repellendus voluptatum, perspiciatis nostrum ipsum officia, voluptates distinctio illum!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi consequatur quidem ea, facere eligendi assumenda molestiae adipisci minus ut labore itaque dolorem exercitationem, blanditiis non eum. Beatae reprehenderit modi quia.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, ipsam?</p>
+    </div>
+    <input type="button" value="12" onclick="cambiar(12)">
+    <input type="button" value="18" onclick="cambiar(18)">
+    <input type="button" value="24" onclick="cambiar(24)">
+    <p>Soy el párrafo de afuera que explico los botones</p>
+    <script>
+        function cambiar(n){
+            // Selecciona todos los párrafo de #caja y genera una rray en la variable pcaja
+            var pcaja = document.querySelectorAll("#caja p");
+            // recorremos el array pcaja
+            for(i=0;i< pcaja.length;i++){                
+                //Asignamos a cada párrafo de #caja su nuevo font size
+                pcaja[i].style.fontSize = n +"px";                
+            }
+        }
+    </script>
+</body>
+</html>

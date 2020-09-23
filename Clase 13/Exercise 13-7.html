@@ -1,0 +1,67 @@
+<!--    
+    ●	Pedir al usuario que ingrese nombres que empiezan con A. Si es correcto agregarlo a un array y mostrar la lista en pantalla, 
+    de lo contrario mostrar un error. 
+    Usar formulario, input type text y botón. En el HTML habrá un ul con una id y un párrafo con una id
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body {
+        margin: 0
+    }
+    
+    #container {
+        width: 100%;
+        max-width: 1500px;
+        min-width: 320px;
+        border: black solid 1px
+    }
+</style>
+</head>
+
+<body>
+<div id="container">
+    <ul id="lista">
+    </ul>
+    <p id="mensaje"></p>
+
+    <form action="">
+        <label for="">Agregar nombre con A</label>
+        <input type="text" id="nombresConA">
+        <input type="button" onclick=agregar() value="Agregar">
+    </form>
+    
+    <script>
+        //El array fuera de la función porque lo creamos vacio al comenzar y se agrega un elemento cada vez que se llama a la función y se cumple con la condición
+        var array = [];
+        function agregar() {            
+            //Obtenemos el valor    
+            var nombresConA = document.getElementById("nombresConA").value;
+            //Validamos la condición
+            if (nombresConA[0].toLowerCase() == "a") {
+                array.push(nombresConA);
+                console.log(array)
+                document.getElementById("mensaje").innerHTML = "Se ha agregado" + nombresConA
+                // Recorremos el array y agregamos en un acumula
+                var acumula = "";
+                for (i in array){
+                    // En cada pasada agregamos un li que es un elemento del array
+                    acumula += "<li>"+array[i]+"</li>"
+                }
+                // Escribimos todos los li acumulados en la lista del ul del HTML
+                document.getElementById("lista").innerHTML = acumula;
+
+            } else {
+                document.getElementById("mensaje").innerHTML = "Error"
+            }
+        }
+    </script>
+</div>
+</body>
+</html>

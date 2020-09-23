@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            transition: 2s;
+        }
+        #mensaje strong{
+            color: red;
+        }
+    </style>     
+</head>
+<body>
+    <input type="text" placeholder="Escribe algo, amigo" onkeyup="escribir()" id="texto">
+    <p id="escrito"></p>
+    <p id="mensaje"></p>    
+    <script>
+        function escribir(){
+            // La línea de abajo equivale a  var t = document.getElementById("texto").value;
+            var t = document.querySelector("#texto").value;
+            var e = document.getElementById("escrito");
+            var m = document.getElementById("mensaje");     
+            // Escribimos en el párrafo cuya id es escrito
+            e.innerHTML = t;  
+            // SI nos pasamos de 10 caracteres
+            if(t.length > 10){ 
+                // Pone en rojo el texto del párrafo que es lo que escribió el usuario         
+                e.style.color = "red"
+                //Mensaje de error
+                m.innerHTML = "<strong>Error pasaste los 10 caracteres</strong>"
+            }
+            // Si estamos en la cantidad de caraceres permitidos
+            else{
+                // Pone en negro el texto del párrafo que es lo que escribió el usuario
+                e.style.color = "black"
+                //Mensaje recordando el máximo de caracteres
+                m.innerHTML = "<small><em>Máximo 10 Caracteres</em></small>"
+            }                 
+
+        }
+
+    </script>
+</body>
+</html>

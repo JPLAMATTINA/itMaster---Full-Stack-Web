@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            transition:5s;
+        }
+    </style>    
+</head>
+<body>
+    <select id="colores" onchange="cambiarColor()">
+        <option value="white">Elegir...</option>
+        <option value="pink">Rosa</option>
+        <option value="yellow">Amarillo</option>
+        <option value="lightblue">Celeste</option>
+    </select>    
+    <script>
+        function cambiarColor(){
+            // Recoge el color del select
+            var color = document.getElementById("colores").value;
+            //Aplica el color al body con querySelector, que usa el selector de manera similar a CSS (aplica al primer elemento que coincide con lo buscado)
+            document.querySelector("body").style.backgroundColor = color;
+        }
+    </script>    
+</body>
+</html>

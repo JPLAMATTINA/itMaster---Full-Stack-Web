@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            transition:2s;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Soy el título del Mundo</h1>
+    <input type="button" value="Colorear" onclick="colorear()">
+    <script>
+        function colorear(){
+            // con style podemos manipular los estilos desde css
+            document.getElementById("titulo").style.color ="navy";
+            // el nombre de los estilos es como en CSS pero si hay más de una palabra sin usar guión y con Camel Case: camelCase - backgroundColor
+            document.getElementById("titulo").style.backgroundColor ="gold";            
+        }
+    </script>
+</body>
+</html>

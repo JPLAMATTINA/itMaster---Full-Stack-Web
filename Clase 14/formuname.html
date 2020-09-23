@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<script>
+		function obtener(){
+		    var comidas = document.getElementsByName('comida[]');
+		    var cantidad = comidas.length;
+            // Genero el acumulador
+		    r = ""
+            // Recorro todos los checkbox
+		    for (var i=0; i<cantidad; i++) {
+                // Verifico los que están chequeados
+                if(comidas[i].checked){
+                    //Los agrego al acomulador, usando su value
+                    r += comidas[i].value + "<br>"
+                }
+		    }
+            //Escribo en el párrafo los checkbox que eligió el usuario
+		    document.getElementById("resultado").innerHTML= r;
+
+		}
+	</script>    
+</head>
+<body>
+    <body>
+        <form>
+            <label>Pizza</label>		
+            <input type="checkbox" name="comida[]" value="pizza">
+            <br>
+            <label>Asado</label>		
+            <input type="checkbox" name="comida[]" value="asado">
+            <br>
+            <label>Tarta de verdura</label>		
+            <input type="checkbox" name="comida[]" value="tarta">
+            <br>
+            <input type="button" value="Obtener" onclick="obtener()">				
+        </form>
+        <p id="resultado"></p>
+    </body>    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!--●	Pedir al usuario que ingrese un año e indicar 
+    si se jugó un mundial de fútbol ese año. Usar formulario, input type number y botón.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Ingrese el año: </label>
+        <input type="number" name="" id="anio" placeholder="Ponga el año..">
+        <input type="button" value="Mundialito" onclick="calcular()">
+    </form>
+    <p id="resultado"></p>
+
+    <script>
+
+        function calcular() {
+            var year = document.getElementById("anio").value;
+
+            if (year % 4 == 2) {
+
+                console.log("Se jugo.");
+                document.getElementById("resultado").innerHTML = "Se jugo.";
+
+            }
+            else {
+                console.log("No se jugo.");
+                document.getElementById("resultado").innerHTML = "No se jugo.";
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

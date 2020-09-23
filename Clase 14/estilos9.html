@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mensaje{
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Términos</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sed officiis perspiciatis mollitia, ad debitis accusantium modi consequuntur earum magni quam qui dolorum corrupti labore nemo tenetur ipsum recusandae? Possimus.</p>
+    <input type="checkbox" value="1" name="acepto"> <label>Acepto los <a href="#">términos</a></label>
+    <br>
+    <input type="button" value="Avanzar" onclick="aceptar()">
+    <p id="mensaje">Debes aceptar los términos</p>
+
+    <script>
+        function aceptar(){
+            // Obtengo el checkbox
+            var a = document.getElementsByName('acepto');
+            //Verifico si el el único checkbox que tengo está chequeado
+            if(a[0].checked){
+                //Está chequeado, oculto el mensaje 
+                document.getElementById("mensaje").style.display = "none";
+                // Redirecciono a la página destino
+                window.location.href = "ternario.html";
+            }
+            else{
+                //Mostrar el mensaje de error
+                document.getElementById("mensaje").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

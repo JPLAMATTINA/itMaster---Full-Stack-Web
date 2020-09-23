@@ -1,0 +1,31 @@
+<!--●	Pedir al usuario que ingrese un año e indicar si es bisiesto. Usar formulario, input type number y botón.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>ingrese un año</label>
+        <input  type="button" onclick="bisiesto()" value="boton" id="b">
+        <input type="number" placeholder="ingrese un año" id="number">
+        <p id = "anio"></p>
+    </form>
+    <script>
+        function bisiesto (){
+            var a = document.getElementById("number").value;
+
+            if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0){
+
+                document.getElementById("anio").innerHTML=("es bisiesto " + a)
+            }
+            else{
+                document.getElementById("anio").innerHTML=("no es bisiesto " + a)
+            }
+        }
+    </script>
+</body>
+</html>

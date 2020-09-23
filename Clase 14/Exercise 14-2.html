@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: pink; margin: 0 auto; text-align:center
+        }
+      #container{margin:0 ; min-width:500px }
+        form {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form action=""><label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu nombre">
+            <label for="menu">Cómo nos conoció:</label>
+            <select id="menu">
+                <option value="0" >Selecciona una opción</option>
+                <option value="1" >A traves de un amig@</option>
+                <option value="2" > Google</option>
+                <option value="3" >Otro</option>
+                </select>
+            <input type="checkbox" value="check" id="aceptar">
+            <label for="aceptar">Aceptar</label>
+            <input type="button" value="enviar" id="boton" onclick="evaluar()">
+        </form>
+        <p id="devolucion"></p>
+        <script>
+            function evaluar() {
+                // Cuando usamos document.getElementById devuelve un elemento singular
+                var nombre = document.getElementById("nombre").value;            
+                var menu = document.getElementById("menu").value;
+                var check = document.getElementById("aceptar");
+                if ((nombre.length >= 4) && (menu != "0") && (check.checked)) {
+                    document.getElementById("devolucion").style.color = "green";
+                    document.getElementById("devolucion").innerHTML = "Gracias, " + nombre + " , tu información ha sido enviada."
+                } else {
+                    document.getElementById("devolucion").style.color = "red";
+                    document.getElementById("devolucion").innerHTML = "ERROR: Tu nombre debe tener más de 4 caracteres; debes elegir una opción y  hacer click en /'aceptar/'."
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

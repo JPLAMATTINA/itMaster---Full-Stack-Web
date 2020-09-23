@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select id="elegido">
+            <option value="1">Medialunas</option>
+            <option value="2">Tostadas</option>
+            <option value="3">Torta</option>
+        </select>
+        <input type="button" onclick="elegir()" value="Mostrar">
+    </form>
+    <p id="resultado"></p>
+    <script>
+        
+        function elegir(){
+            var elegido = document.getElementById("elegido").value;
+            document.getElementById("resultado").innerHTML = elegido;
+        }
+    </script>
+</body>
+</html>

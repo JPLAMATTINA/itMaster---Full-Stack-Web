@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            margin:0;
+            cursor: pointer;
+        }
+        #menu{
+            margin:0;
+            padding:0;
+            list-style: none;
+            background-color: navy;
+            width: 100px;
+            display: none;
+        }
+        ul li{
+            border-bottom:1px solid silver;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   <h1 onclick="mostrar()">Menu</h1> 
+   <ul id="menu">
+       <li>Menu 1</li>
+       <li>Menu 2</li>
+       <li>Menu 3</li>
+       <li>Menu 4</li>       
+   </ul>
+   <script>
+       var oculto = 1;
+       function mostrar(){
+           // Verifica si está oculto y lo muestra
+           if(oculto == 1){
+                document.getElementById("menu").style.display = "block";
+                oculto = 0;
+            }            
+            else{
+                // Lo oculta
+                document.getElementById("menu").style.display = "none";
+                oculto = 1;                
+            }
+       }
+   </script>
+</body>
+</html>

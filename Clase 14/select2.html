@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select id="elegido" onchange="elegir()">
+            <option value="0">Elegir ...</option>
+            <option value="1">Medialunas</option>
+            <option value="2">Tostadas</option>
+            <option value="3">Torta</option>
+        </select>        
+    </form>
+    <p id="resultado"></p>
+    <script>
+        function elegir(){
+            var elegido = document.getElementById("elegido").value;
+            if(elegido != "0"){
+                document.getElementById("resultado").innerHTML = elegido;
+            }
+            else{
+                document.getElementById("resultado").innerHTML = ""
+            }
+        }
+    </script>
+</body>
+</html>
