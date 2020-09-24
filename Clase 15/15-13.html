@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        INCORPORAMOS UNA LIBRERÍA ONLINE: Sweet alert
+     -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        body{
+            transition: 2s;
+        }
+        .swal-title{
+            color: brown;
+        }
+    </style>
+</head>
+<body onload="bienvenida()">
+    <!-- 
+        Ejemplo con https://sweetalert.js.org/guides/
+     -->
+    <h1>Soy el titulo</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quisquam sequi eveniet perspiciatis omnis beatae ex asperiores perferendis ratione, harum facere optio ipsam ea voluptatibus! Possimus odit id eaque unde!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem, nobis neque fugit earum labore eaque. Porro debitis facilis quas. Ducimus nisi molestias autem officiis ipsam natus iusto facere unde.</p>    
+    <script>
+        function bienvenida(){
+            swal("El titulo del Alert", "Hola soy el texto del Mundo!");
+            document.querySelector("body").style.backgroundColor = "pink";
+        }
+    </script>
+</body>
+</html>

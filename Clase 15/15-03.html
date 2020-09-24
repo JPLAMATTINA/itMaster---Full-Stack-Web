@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul id="menu"></ul>
+    </nav>
+
+    <script>
+        var menu = [["Home","index.html"],["About","aboutus.html"],["Contact Us","contact.html"],["Media","multimedia.html"]];    
+        var m = document.getElementById('menu');
+        //For of el primer elemento tiene el contenido, no la posición como for i in
+        for(item of menu){
+            // para este caso no es necesario el acumulador porque agrega en el elemento
+            m.insertAdjacentHTML("beforeend","<li><a href='"+item[1]+"'>"+item[0]+"</a></li>")
+        }
+        
+    </script>
+</body>
+</html>

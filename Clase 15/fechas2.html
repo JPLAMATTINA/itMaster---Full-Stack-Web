@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick="contar()" value="Haz clic">
+    <script>
+        var d = new Date();
+        var time = d.getTime();		
+	    console.log(time); 
+        function contar(){
+            var d2 = new Date();
+            var time2 = d2.getTime();		
+            console.log(time2); 
+            console.log("Han transcurrido: " + Math.round((time2 - d)/1000) + " segundos")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<script>
+    var dias = ["Domingo","Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]; 	
+    // Obtiene la fecha completa actual de la computadora del usuario
+    var d = new Date();
+    console.log(d);
+    // Obtiene el día de la semana de 0 a 6
+    var dia = d.getDay();
+    console.log(dia);
+    console.log(dias[dia])
+    // Obtiene el día del mes
+    var diames = d.getDate();
+    console.log(diames);
+    // Obtiene el número de mes de 0 a 11
+    var nmes = d.getMonth();
+    console.log(nmes);    
+    console.log(meses[nmes]);
+    // Obtiene el año
+    var anio = d.getFullYear();
+    console.log(anio);
+    //Horas
+    var hora = d.getHours();
+    console.log(hora);
+    //Minutos
+    var minutos = d.getMinutes();
+    console.log(minutos);	
+    //Segundos
+    var segundos = d.getSeconds();
+    console.log(segundos);	
+    //Milisegundos
+    var mili = d.getMilliseconds();
+    console.log(mili);   
+    // Los milisegundos desde 1/1/1970
+    var time = d.getTime();		
+	console.log(time);    
+</script>

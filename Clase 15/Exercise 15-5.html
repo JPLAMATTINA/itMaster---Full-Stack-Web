@@ -1,0 +1,40 @@
+<!--5.	Pedir al usuario que ingrese valores numéricos (que los ingrese en un input type text). 
+    Mostrarlos en pantalla a medida que los ingresa en una lista. Mostrarlos redondeados con round.
+     Usar insertAdjacement, template string y Math.round. Al final mostrar la suma total (en un párrafo fuera de la lista).
+-->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="texto">
+        <input type="button" onclick="pedirNumero()" value = "validar">        
+    </form>
+        <ul id="lista"></ul>
+        <p id="mostrar"></p>
+
+    <script>
+        var subtotal = 0;
+        function pedirNumero(){
+            var num = Math.round(document.getElementById("texto").value);
+            document.getElementById("lista").insterAdjacement("beforeend",`<li><a href=${num}</a></li>`)
+            subtotal += num;
+            document.getElementById("mostrar").innerHTML = subtotal;
+            
+
+            //insertAdjacement al ul de pepitos
+            //subtotal += pepitos
+            //innerHTML al resultado con el subtotal
+        }
+    </script>
+</body>
+</html>
+
+
+
+-->

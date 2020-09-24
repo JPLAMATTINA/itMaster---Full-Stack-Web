@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul id="menu"></ul>
+    </nav>
+
+    <script>
+        var menu = [["Home","index.html"],["About","aboutus.html"],["Contact Us","contact.html"],["Media","multimedia.html"]];    
+        var m = document.getElementById('menu');
+        for(item of menu){
+            // Cuando usamos ` ${lavariable} y no usamos + para concatenar
+            m.insertAdjacentHTML("beforeend",`
+                <li>
+                    <a href="${item[1]}">${item[0]}</a>
+                </li>                                
+                `)
+        }
+        
+    </script>
+</body>
+</html>

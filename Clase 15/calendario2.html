@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <input type="date" id="calendario" min="" max="">    
+    <script>
+        function init(){
+            var d = new Date();
+            var diames = d.getDate();
+            var nmes = d.getMonth() + 1;
+            var anioactual = d.getFullYear();
+            var aniomax = anioactual + 1;
+            if(diames<10){
+                var diames = "0"+diames
+            }            
+            if(nmes<10){
+                var nmes = "0"+nmes
+            }            
+            var fechamin = `${anioactual}-${nmes}-${diames}`
+            var fechamax = `${aniomax}-${nmes}-${diames}`
+            document.getElementById("calendario").setAttribute("min", fechamin);
+            document.getElementById("calendario").setAttribute("max", fechamax);
+        }
+
+    </script>
+</body>
+</html>

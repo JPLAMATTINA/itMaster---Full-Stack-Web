@@ -1,0 +1,48 @@
+<!--3.	Hacer un juego de dados.
+a.	Existe un botón tirar.
+b.	Tenemos dos dados
+c.	Mostrar el resultado  de cada dado en pantalla.
+d.	Indicar cuál ganó.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Proba tu suerte</label>
+    <input type="button" id="validar" value="tirar" onclick="tirarDado()">
+    <p id = "mostrar"></p>
+    <p id = "mostrarUno"></p>
+    <p id = "mostrarDos"></p>
+</body>
+</html>
+<script>
+
+    function tirarDado(){
+    var numeros = [1, 2, 3, 4, 5, 6];
+    var dado = Math.ceil(Math.random() * (numeros.length)); 
+    var dadoUno = Math.ceil(Math.random() * (numeros.length));
+   
+    
+
+    if (dado > dadoUno){
+        document.getElementById("mostrar").innerHTML = `${dado}`;
+        document.getElementById("mostrarUno").innerHTML = dadoUno;
+        document.getElementById("mostrarDos").innerHTML = `el dado ganador es:  ${dado}`;
+    }
+    if (dado === dadoUno){
+        document.getElementById("mostrar").innerHTML = `${dado}`;
+        document.getElementById("mostrarUno").innerHTML = `${dado}`
+        document.getElementById("mostrarDos").innerHTML = `los dados ${dado} y ${dadoUno} son iguales, hay empate`;
+    }
+    if (dadoUno > dado){
+        document.getElementById("mostrar").innerHTML = dado;
+        document.getElementById("mostrarUno").innerHTML = `${dadoUno}`
+        document.getElementById("mostrarDos").innerHTML = `el dado ganador es:  ${dadoUno}`;
+    }
+    }
+
+</script>

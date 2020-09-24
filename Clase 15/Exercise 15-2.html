@@ -1,0 +1,37 @@
+<!--
+    2.	Basado en el ejercicio 1. Mostrar dos imágenes aleatorias del array (tienen que ser diferentes imágenes)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        display: inline-block;
+    }
+</style>
+<body>
+    
+    <p id = "mostrar"></p>
+    <p id = "mostrados"></p>
+</body>
+</html>
+<script>
+    var imagenes = ["https://i.pinimg.com/564x/ea/c9/60/eac96051cff7c562dbc455928494923d.jpg", "https://i.pinimg.com/564x/48/5d/eb/485debb482c0ef19989c686adeae84aa.jpg",
+     "https://i.pinimg.com/564x/40/29/88/40298844b6b58c684286d9e91df1ab48.jpg", "https://i.pinimg.com/564x/26/d6/26/26d626a1138dd3e4759a74e0d9ac02d5.jpg"
+     ,"https://i.pinimg.com/564x/80/db/3b/80db3bdeef8ac98aae79b06d446f8cd5.jpg"]
+
+    
+    do {    
+        var imagen = Math.floor(Math.random() * (imagenes.length)); 
+        var i = Math.floor(Math.random() * (imagenes.length));     
+        document.getElementById("mostrar").innerHTML= `<img src=" ${imagenes[i]}" alt="">`   
+        document.getElementById("mostrados").innerHTML= `<img src=" ${imagenes[imagen]}" alt="">`
+    }
+    while (imagen == i);
+   
+    </script>

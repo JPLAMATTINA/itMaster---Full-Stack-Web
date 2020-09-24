@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Comenzar" onclick="init()">
+    <input type="button" value="Detener" onclick="stop()">
+    <ul id="r"></ul>
+<script>
+var t;
+function init() {
+    t = setInterval(function(){ aleatorios() }, 1000);
+}
+
+function stop() {
+  clearInterval(t);
+}
+
+function aleatorios(){
+    var random = Math.random();    
+    var numero = Math.ceil(random * 999);
+    document.getElementById("r").insertAdjacentHTML("afterbegin",`
+                <li>
+                    ${numero}
+                </li>                                
+                `)
+}
+
+
+
+</script>    
+</body>
+</html>

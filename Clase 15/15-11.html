@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="r"></h1>
+    <input type="button" value="Comenzar" onclick="init()">
+    <input type="button" value="Detener" onclick="stop()">
+<script>
+// la t tiene el intervalo de tiempo
+var t;
+//Cada 1 segundo llama a la función aleatorios
+function init() {
+    t = setInterval(function(){ aleatorios() }, 1000);
+}
+
+// Detiene el proceso
+function stop() {
+  clearInterval(t);
+}
+
+function aleatorios(){
+    // Crear un número random
+    var random = Math.random();    
+    var numero = Math.ceil(random * 999999);
+    //Lo inerta en el HTML
+    document.getElementById("r").innerHTML = numero
+}
+
+
+
+</script>    
+</body>
+</html>

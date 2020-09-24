@@ -1,0 +1,49 @@
+<!--4.	Que el usuario indique un número al 1 al 10. Por otra parte tirar un random (del 1 al 10).
+    Indicar en un Sweet alert si el número que ingresó el usuario es igual al random que salió.
+    Decirle que ganó, sino que perdió.-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body >
+        <label> eliga un número del 1 al 10</label>
+        <input type ="number" id="num" placeholder="0" value="numero">
+        <label>Proba tu suerte</label>
+        <input type="button" id="validar" value="Tirar" onclick="tirarNumero()">
+        <p id ="mostrar"></p>
+        <p id ="swet"></p>
+        
+     <script>
+        
+        function tirarNumero(){
+        var numeros = [1, 2, 3, 4, 5, 6];
+        var numero = Math.ceil(Math.random() * (numeros.length));
+            document.getElementById("mostrar").innerHTML = numero;
+        var i = document.getElementById("num").value
+
+                // incorporamos libreria de sweetalert
+        if (numero == i){
+        swal({
+                title: "En Hora buena",
+                text: "Son Iguales!",
+                icon: "success",
+                });
+                }
+        else{
+            swal("Nah!", "no son iguales!", "error");
+        }
+    }
+        
+
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
+   
+
