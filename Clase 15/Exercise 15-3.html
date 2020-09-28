@@ -33,7 +33,7 @@ d.	Indicar cuál ganó.
         document.getElementById("mostrarUno").innerHTML = dadoUno;
         document.getElementById("mostrarDos").innerHTML = `el dado ganador es:  ${dado}`;
     }
-    if (dado === dadoUno){
+    else if (dado === dadoUno){
         document.getElementById("mostrar").innerHTML = `${dado}`;
         document.getElementById("mostrarUno").innerHTML = `${dado}`
         document.getElementById("mostrarDos").innerHTML = `los dados ${dado} y ${dadoUno} son iguales, hay empate`;

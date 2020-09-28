@@ -1,0 +1,55 @@
+<!--
+9.	Calcular cuántos días faltan para fin de mes.
+10.	Calcular cuántos días faltan para fin de año.
+11.	Calcular cuántos días pasaron desde principio de año.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="dias()">
+  <h1>Faltan <span id="dias"></span> para el mes que viene (sin contar hoy)</h1>
+  <h1>Faltan <span id="dias2"></span> para el año que viene (sin contar hoy)</h1>
+  <h1>Pasaron <span id="dias3"></span> desde principio de año (sin contar hoy)</h1>  
+</body>
+<script>
+function dias(){
+// Fecha de hoy
+var a = new Date()
+var y = a.getFullYear()
+var m = a.getMonth()
+var d = a.getDay()
+//El mes arranca en 0 , le sumamos 1 para que quede como el número de mes de 1 a 12
+var m1 = m+1
+//https://www.w3schools.com/js/js_dates.asp
+var b = new Date(y,m1);
+// Ejercicio 9
+console.log("Dias: "+ (b-a))
+// De milisegundos a dias. x 1000 que son los milisegundos, x 60 son los segundos, x 60 son los minutos y 24 son las horas. Eso pasa a dias.
+// Si no se pone * 24 calcula las horas
+var days = (b - a) / (60 * 60 * 24 * 1000);
+console.log(days)
+day= Math.floor(days)
+document.getElementById("dias").innerHTML = `"${day}" días`
+console.log(day)
+// Ejercicio 10 calcular cuanto falta para fin de año
+var y1 = y+1
+var new_year = new Date(y1,0);
+var days_y = (new_year - a) / (60 * 60 * 24 * 1000);
+year= Math.floor(days_y)
+console.log(year)
+document.getElementById("dias2").innerHTML = `"${year}" días`
+// Ejercicio 11 calcular desde el principo de año
+var new_year1 = new Date(y,0);
+var days_y1 = (a - new_year1) / (60 * 60 * 24 * 1000);
+year1= Math.floor(days_y1)
+console.log(year1)
+document.getElementById("dias3").innerHTML = `"${year1}" días`
+}
+</script>
+</html>

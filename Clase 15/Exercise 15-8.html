@@ -1,0 +1,51 @@
+<!--
+    8.	Mostrar 20 años pares, desde el actual hacia adelante
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100%;
+            height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="cuenta()">
+    <div><ul id="reloj"></ul></div>
+</body>
+<script>
+// Obtenemos la fecha
+var d = new Date();
+// Obtenemos el año actual
+var n= d.getFullYear()
+reloj = document.getElementById("reloj")    
+// Creamos el array donde van los años
+var x =[]
+function cuenta(){    
+    var y= n
+    do{    
+    // Se fija si es par
+    if(y%2==0){
+    // Si es par lo incopora en el array
+    x.push(y)}   
+    y++
+    // Cuando llega a insertar 20 termina
+    } while (x.length <20)    
+    // Recorer el array
+for (year of x){
+    // Agrega en el ul los años como un li cada uno
+    reloj.insertAdjacentHTML("afterend", `<li> ${year} </li>`)
+}
+}
+</script>
+</html>
