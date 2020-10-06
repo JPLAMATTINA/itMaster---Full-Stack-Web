@@ -1,0 +1,23 @@
+<script>
+
+    const peliculas = [
+            { pelicula: "Inception", director: "Christopher Nolan", actor: "Leonardo DiCaprio" },
+            { pelicula: "500 Days of Summer", director: "Marc Webb", actor: "Joseph Gordon-Levitt" },
+            { pelicula: "Dark Shadows", director: "Tim Burton", actor: "Johnny Depp" },
+            { pelicula: "Volver al Futuro", director: "Robert Zemeckis", actor: "Michael Fox"}			
+            ];
+    
+    //Modificar
+    peliculas[2].pelicula = "Ed Wood";
+    //Eliminar el último
+    var eliminar = peliculas.pop();  
+    console.log(eliminar);
+    //Eliminar desde y cuantos elimina
+    var removed = peliculas.splice(1, 2);
+    console.log(removed);
+    //Agrega al final
+    peliculas.push({pelicula:"Toy Story",director:"Pixar",actor:"Tom Hank"})
+    //Agrega al principio
+    peliculas.unshift({pelicula:"Toy Story III",director:"Pixar",actor:"Tom Hank"})
+    console.log(peliculas);    
+</script>

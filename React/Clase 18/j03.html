@@ -1,0 +1,13 @@
+<script>
+    const peliculas = [
+          { titulo: "Inception", director: "Christopher Nolan", actor: "Leonardo DiCaprio" },
+          { titulo: "500 Days of Summer", director: "Marc Webb", actor: "Joseph Gordon-Levitt" },
+          { titulo: "Dark Shadows", director: "Tim Burton", actor: "Johnny Depp" }
+      ];
+      var newarray = []
+      // Con for of recorremos el array de JSONs
+      for(pelicula of peliculas){
+          console.log(`${pelicula.titulo} (${pelicula.director})`)           
+      }
+      console.log("Cantidad de películas: " + peliculas.length)
+  </script>

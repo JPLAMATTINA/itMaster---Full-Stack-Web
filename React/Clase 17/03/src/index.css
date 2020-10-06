@@ -1,0 +1,25 @@
+/*
+  Importamos desde Google Fonts
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body{
+  background-color: pink;
+}
+#titulo{
+  color:navy;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  margin:10px;
+}
+
+p{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+}

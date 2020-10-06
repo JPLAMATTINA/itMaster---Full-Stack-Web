@@ -1,0 +1,53 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+
+}
+Header {
+  width: 100%;
+  height: 75px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-left: 0xp;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: nowrap;
+  background-color:grey;
+}
+
+#imagenHeader{
+  padding: 10px auto;
+  margin-top: 10px;
+}
+
+Main{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+#table{
+  display: flex;
+  justify-content: space-between  ;
+}
+
+
+Aside{
+  width: 30%;
+  float: left;
+  list-style: none;
+ }
+
+Aside ul li{
+  text-align: center;
+  list-style: none;
+  width: 50%;
+  border: 1px black solid;
+  cursor: pointer;
+ }

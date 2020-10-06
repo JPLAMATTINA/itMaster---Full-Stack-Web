@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>	
+<style>
+	thead tr{background-color: black;color: gold;}
+	tbody .marcado{background-color: gold;}
+</style>
+<body onload="init()">
+<form>
+	<input type="search" id="busqueda" placeholder="Buscar...">
+	<input type="button" onclick="buscar()" value="Buscar">
+</form>
+<table border="1">	
+	<thead><tr><th>Peli</th><th>Director</th><th>Actor</th></tr></thead>
+	<tbody id="tablillabody"></tbody>
+</table>
+	<script>	
+		const peliculas = [
+			{ pelicula: "Inception", director: "Christopher Nolan", actor: "Leonardo DiCaprio" },
+			{ pelicula: "500 Days of Summer", director: "Marc Webb", actor: "Joseph Gordon-Levitt" },
+			{ pelicula: "Dark Shadows", director: "Tim Burton", actor: "Johnny Depp" },
+			{ pelicula: "Volver al Futuro", director: "Robert Zemeckis", actor: "Michael Fox"}			
+			];	
+
+			function init(){
+            //Al iniciar la página carga las películas en el tbody de la tabla
+			let acumula = "";
+			for(let i in peliculas){					
+				acumula += "<tr><td>"+peliculas[i].pelicula+"</td><td>"+peliculas[i].director+"<td>"+peliculas[i].actor+"</td></tr>";
+			}	
+			document.getElementById("tablillabody").innerHTML = acumula;
+			}
+
+			function buscar(){
+                // Obtenemos lo que el usuario escribió al buscar
+				let busqueda = document.getElementById("busqueda").value.toLowerCase();
+			    let acumula = "";
+                for(let i in peliculas){	
+                    // Buscamos por todos los keys (título, director o actor)		
+                    if(peliculas[i].pelicula.toLowerCase().indexOf(busqueda) != -1 || peliculas[i].director.toLowerCase().indexOf(busqueda) != -1 || peliculas[i].actor.toLowerCase().indexOf(busqueda) != -1){
+                        // Si lo encuentra Genera el tr con la clase marcado y se ve con fondo amarillo
+                        var tr = "<tr class='marcado'>"
+                    }
+                    else{
+                        // Si no lo encuentra genera el tr sin la clase y se ve con fondo blanco
+                    var tr = "<tr>";	
+                    }	
+                    // Se agrega el contenido que viene del JSON
+                    acumula += tr+"<td>"+peliculas[i].pelicula+"</td><td>"+peliculas[i].director+"<td>"+peliculas[i].actor+"</td></tr>";
+                }	
+                // Sobre el tbody actualizamos todo sobreescribiendo lo que había
+                document.getElementById("tablillabody").innerHTML = acumula;				
+
+			}
+	</script>
+</body>
+</html>

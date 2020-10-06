@@ -1,0 +1,26 @@
+/*
+ Importamos fuentes de Google Fonts
+ Importamos Bootstrap
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+main {
+  width:80%;
+  text-align: center;
+}
+
+header h1{
+  font-family: 'Architects Daughter', cursive;
+
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;  
+  width:100%;  
+}
+li {
+  list-style: none;
+}

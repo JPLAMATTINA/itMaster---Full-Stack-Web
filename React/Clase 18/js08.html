@@ -1,0 +1,9 @@
+<script>
+    //Nos conectamos a una dirección que ofrece un JSON de ejemplo
+    fetch('https://jsonplaceholder.typicode.com/posts/2')
+      .then(
+    // Transforma el JSON para que sea legible por JavaScript como un Objeto de JS
+          response => response.json()
+        )
+      .then(json => console.log("Titulo:" + json.title))
+</script>

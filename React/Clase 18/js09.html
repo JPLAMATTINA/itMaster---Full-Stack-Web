@@ -1,0 +1,12 @@
+<script>
+    // Vamos a buscar la información de usuarios y nos llega como un array de JSONs
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(r => r.json())
+      .then(usuarios => {
+          // Como recibo un array lo recorro
+            for(usuario of usuarios){
+                console.log(usuario.name + " - " + usuario.address.city + " / " + usuario.company.name)
+            }
+
+      })
+</script>

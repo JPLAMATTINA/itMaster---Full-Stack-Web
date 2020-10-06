@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu1">
+
+    </ul>
+</body>
+<script>
+    const menu = [
+        { texto: "Home", link: "index.html"},
+        { texto: "Contacto", link: "contacto.html"},
+        { texto: "Nosotros", link: "about.html"}
+    ];
+    // Recorremos el Array de JSONs
+    for(let item of menu){
+        // Los agregamos en un ul que se llama menu1
+        document.getElementById("menu1").insertAdjacentHTML('beforeend', `<li><a href="${item.link}">${item.texto}</a></li>`);
+    }
+    
+
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>	
+<style>
+    #tabla{                
+        display: none;        
+    }
+	
+</style>
+<body>
+<form>
+	<input type="search" id="busqueda" placeholder="Buscar..." onkeyup="buscar()">	
+</form>
+<table border="1" id="tabla">	
+	<thead><tr><th>Peli</th><th>Director</th><th>Actor</th></tr></thead>
+	<tbody id="tablillabody"></tbody>
+</table>
+	<script>	
+		const peliculas = [
+			{ pelicula: "Inception", director: "Christopher Nolan", actor: "Leonardo DiCaprio" },
+			{ pelicula: "500 Days of Summer", director: "Marc Webb", actor: "Joseph Gordon-Levitt" },
+			{ pelicula: "Dark Shadows", director: "Tim Burton", actor: "Johnny Depp" },
+			{ pelicula: "Volver al Futuro", director: "Robert Zemeckis", actor: "Michael Fox"}			
+			];	
+
+		
+            // Cada vez que el usuario escribe busca sobre peliculas
+			function buscar(){
+                // Obtiene lo que escribe el usuario
+				var busqueda = document.getElementById("busqueda").value.toLowerCase();
+                var acumula = "";   
+                // Esta varible es para identificar si hay al menos un registro   
+                var j = 0;          
+                for(i in peliculas){			
+                    if(peliculas[i].pelicula.toLowerCase().indexOf(busqueda) != -1 || peliculas[i].director.toLowerCase().indexOf(busqueda) != -1 || peliculas[i].actor.toLowerCase().indexOf(busqueda) != -1){
+                        var acumula = acumula + "<tr><td>"+peliculas[i].pelicula+"</td><td>"+peliculas[i].director+"<td>"+peliculas[i].actor+"</td></tr>";
+                        j++;
+                    }
+
+                }	
+                
+                if(j>0){
+                    // Quiere decir que encontró al menos una coincidencia
+                    document.getElementById("tabla").style.display = "table"
+                }
+                else{
+                    // Quiere decir que NO encontró coincidencia y oculta la tabla
+                    document.getElementById("tabla").style.display = "none"
+                }
+                document.getElementById("tablillabody").innerHTML = acumula;				
+
+			}
+	</script>
+</body>
+</html>

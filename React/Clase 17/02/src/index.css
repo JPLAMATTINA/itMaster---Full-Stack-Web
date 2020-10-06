@@ -1,0 +1,14 @@
+body{
+  background-color: pink;
+}
+#titulo{
+  color:navy;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  margin:10px;
+}
