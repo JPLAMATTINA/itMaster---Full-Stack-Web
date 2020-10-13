@@ -1,0 +1,21 @@
+<html>
+<div id="caja">
+	
+</div>
+<script>
+    const edades = [40,50,2,23,80,1];
+    // Trae el primer elemento que coincida en el array con la condición
+    console.log(edades.find(edad => edad > 45));
+
+    // Trae el primer elemento que coincida en el array con la condición
+    console.log(edades.find(edad => edad < 18));	
+    
+    //Equivale al primero find
+    for(edad of edades){
+        if(edad > 45){
+            console.log(edad)
+            break
+        }        
+    }
+</script>
+</html>

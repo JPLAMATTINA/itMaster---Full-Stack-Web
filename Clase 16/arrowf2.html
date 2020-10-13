@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#error{color:red;}
+	</style>
+</head>
+<body>
+	<div id="error"></div>
+	<script>
+        
+        // Arrow function el nombre de la variable reemplaza al nombre de la función y lo que hay después de => es la acción de la función
+		const errar = (err) =>document.getElementById("error").innerHTML = "Ha ocurrido un error: "+err;				
+        
+        errar("inesperado");
+        
+        
+        //Equivalente en ES5
+      /*
+        function errar(err){
+            document.getElementById("error").innerHTML = "Ha ocurrido un error: "+err;
+        }
+        errar("inesperado");
+        */
+      
+        
+	</script>
+</body>
+</html>

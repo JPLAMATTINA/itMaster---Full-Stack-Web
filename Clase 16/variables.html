@@ -1,0 +1,15 @@
+<script>
+    // Variable global
+    var a = 1
+    var b = 9
+    console.log(a)
+    function test(){
+        // Variable global cuando no tiene el var delante, dentro de una función
+        a = 2
+        // Variable local de la función
+        var b = 5
+        console.log(a + b)
+    }
+    test()
+    console.log(a+b)
+</script>

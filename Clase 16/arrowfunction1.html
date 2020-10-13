@@ -1,0 +1,17 @@
+<script>
+const edades = [11,24,5,8];
+// ES5
+const edadesordenadas = edades.sort(function(a,b){
+		return a-b;
+    })	    
+    console.log(edadesordenadas)
+
+//ES6 con arrowfunction
+const edadesordenadas_es6 = edades.sort((a,b)=>a-b);
+console.log(edadesordenadas_es6);
+
+
+//Funcion anónima function(a,b){return a-b;}
+//Arrow function (a,b)=>a-b
+
+</script>

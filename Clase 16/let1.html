@@ -1,0 +1,12 @@
+<script>
+    //No deberíamos usar para global let
+    let nombre = "Damian";
+    // Se cumple en el if
+	if (nombre == "Damian"){
+        let nombre = "Dami"
+		console.log(nombre);
+    }
+    //Muestra el que está fuera del bloque
+    //let nombre = "Dami" | no se puede volver a declarar en el mismo contexto
+	console.log(nombre);
+</script>
